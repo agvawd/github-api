@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script src="http://cdnjs.cloudflare.com/ajax/libs/angular.js/1.3.3/angular.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body ng-app="github-api" ng-controller="mainCtrl">
+<form class="search">
+
+	<input class="center input-box" placeholder="Search for a user" ng-model="searchText">
+	<button class="center button-box" ng-click="getUserData()">Submit</button>
+
+</form>
+
+<div class="main-container">
+	<div class="avatar" ><img src="{{user.avatar_url}}" height="100%" width="100%"/></div>
+
+	<div class="container">
+		<ul>
+		<li>name: {{user.name}} </li>
+		<li>email: {{user.email}} </li>
+		<li>company: {{user.company}} </li>
+		<li>location: {{user.location}} </li>
+		</ul>
+	</div>
+
+	<div class="extraInfo">
+		<div class="thirds">Public Repositories: </br> {{user.public_repos}}</div>
+		<div class="thirds">Followers: </br> {{user.followers}}</div>
+		<div class="thirds">Following: </br> {{user.following}}</div>
+	</div>
+
+</div> 	
+
+<script src="app.js"></script>
+<script src="controller.js"></script>
+<script src="service.js"></script>
+<script src="env.js"></script>
+</body>
+</html>

@@ -1,0 +1,53 @@
+html, body {
+	height: 100%;
+	width: 100%;
+}
+
+.search {
+	height: 100px;
+	width: 90%;
+	background: red;
+	margin: 0 auto;
+	text-align: center;
+}
+
+.center {
+	position: relative; top: 30%;
+}
+
+.container {
+	background: grey;
+	height: 50%;
+	width: 50%;
+	margin: 0 auto;
+	margin-top: 20px;
+	padding: 10px;
+}
+
+.avatar {
+	height: 200px;
+	width: 200px;
+	background:  blue;
+	margin: 0 auto;
+	margin-top: 10px;
+}
+
+.thirds {
+	background: blue;
+	width: 100px;
+	height: 100px;
+	float: left;	
+	position: relative; left: 32.5%;
+}
+
+.extraInfo {
+	text-align: center;
+}
+
+.input-box:focus {
+	font-size: 16px;
+};
+
+.button-box:hover{
+	background: green;
+};
